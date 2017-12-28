@@ -1,4 +1,4 @@
-FROM nginx:alpine
+FROM nginx:latest
 
 ENV APP_ROOT /app/web
 
