@@ -3,8 +3,8 @@ FROM nginx:latest
 ENV APP_ROOT /app/web
 
 # Create working dir
-mkdir -p $APP_ROOT && \
-chown -R www-data:www-data /app/web
+RUN mkdir -p $APP_ROOT
+RUN chown -R www-data:www-data /app/web
 
 # set work dir
 VOLUME ["/etc/nginx/conf.d","/app/web"]
